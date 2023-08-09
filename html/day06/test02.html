@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>responsive02</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        
+        div { 
+            background-color: blue;
+            width: 20vw;
+            height: 20vw;
+            margin: 10px;
+        }
+        /*이 경우 정확히 300px인경우에 적용된다
+        사용하기 불편하다
+        @media (width:300px){ */
+        @media (max-width:300px) and (min-width: 250px){
+
+            /*body {
+                background-color: red;
+            }*/
+            
+            section{
+                /*display: flex;*/
+                flex-wrap: wrap; /* 뷰포트 너비의 조건을 만족할 때 section 요소들이 플렉스 레이아웃을 사용, 필요한 경우 여러줄로 줄바꿈 */
+            }
+
+            div{
+                background-color: beige;
+                width:40vw;
+                height: 40vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="div1">div1</div>
+            <div class="div2">div2</div>
+            <div class="div3">div3</div>
+            <div class="div4">div4</div>
+        </section>
+    </main>
+</body>
+</html>

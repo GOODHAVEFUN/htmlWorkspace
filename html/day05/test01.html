@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-input01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <div> id : <input type="text"/> </div>
+            <div>
+                <label for="">pw <input type="password"></label>
+            </div>
+            <div>
+                <label for="input-date">date : </label>
+                <input type="date" id="input-date"/>
+            </div>
+            <div>
+                <!-- submit 버튼을 누르면 해당 form에있는 모든 데이터 -->
+                <input type="submit" value="완료"/>
+            </div>
+            <div>
+                <input type="reset"/>
+            </div>
+            <div>
+                <input type="file">
+            </div>
+            <div>
+                <input type="hidden" name="test" value="test">
+            </div>
+            <div>
+                <div>radio : </div>
+                <!-- radio 버튼은 name 속성을 같은 지정해야만 하나만 선택하게 할 수 있다
+                checked는 페이지 진입시 기본으로 선택된다
+                value는 서버에  -->
+                선택1 <input type="radio" value="1" name="radio1" checked/>
+                선택2 <input type="radio" value="2" name="radio1" />
+            </div>
+            <div>
+                <div>check box : </div>
+                선택1 <input type="checkbox" name="check1" value="1" />
+                선택2 <input type="checkbox" name="check2" value="2" />
+                선택3 <input type="checkbox" name="check3" value="3" />
+            </div>
+        </form>
+    </main>
+</body>
+</html>

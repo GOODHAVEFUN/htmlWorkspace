@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header,.footer{
+            background-color: antiquewhite;
+            height: 100px;
+        }
+        .section-container{
+            background-color: black;
+            height: 500px;
+
+            /*aside, section을 가로로 배치해야함*/
+            display: flex;
+            justify-content: space-between;
+        }
+        .aside-A{
+            background-color: blueviolet;
+            height:100%;
+            /*%단위는 부모요소의 크기의 %를 의미한다*/
+            width: 200px;
+        }
+        .aside-B{
+            background-color: blue;
+            height:100%;
+            /*%단위는 부모요소의 크기의 %를 의미한다*/
+            width: 200px;
+        }
+        .section{
+            background-color: brown;
+            height: 100%;
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="header"></div>
+      <div class="section-container">
+        <div class="aside-A"></div>
+        <div class="section"></div>
+        <div class="aside-B"></div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

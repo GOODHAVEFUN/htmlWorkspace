@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        main {
+            background-color: gray;
+            width:100%;
+            height: 1000px;
+        }
+        div{
+            width:100px;
+            height:100px;
+            border : 1px solid red;
+            background-color: black;
+            margin: 10px auto;
+        }
+        @keyframes background{
+            from{
+                background-color: gold;
+            }
+            50%{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: gold;
+            }
+        }
+        .div1{
+            animation-name: background;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes test{
+            0% {
+                background-color: red;
+            }
+            25%{
+                background-color: rgba(255, 212, 20, 0.5);
+            }
+            50%{
+                background-color: rgb(130, 255, 0);
+                border-radius: 50%;
+            }
+            75%{
+                background-color: red;
+                transform: rotate(360deg);
+            }
+        }
+        .div2{
+            animation: test infinite 5s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class = "div1">div1</div>
+        <div class = "div2">div2</div>
+    </main>
+</body>
+</html>

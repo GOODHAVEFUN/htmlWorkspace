@@ -1,0 +1,7 @@
+div{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    /* 블록요소의 테두리를 설정*/
+    margin: 20px;
+    padding: 20px;
+}

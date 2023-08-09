@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display01</title>
+    <style>
+        .span-inline{
+            background-color: beige;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid red;
+            /* width: 20px; */
+            /* 인라인요소는 컨텐츠영역 크기조절이 불가는 하다 */
+            line-height: 100px;
+            /* 인라인 요소는 줄간격조절할수있다 */
+            letter-spacing: 10px;
+            /* 글자간의 간격을 조절할수있음 */
+
+        }
+
+        .span-block{
+            display: block;
+            background-color: darkcyan;
+            color: darkred;
+            border: 1px solid blue;
+            font-size: 25px;
+            font-weight: bold;
+
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+        }
+
+        .div-inline-block{
+            background-color: antiquewhite;
+            border: 1px;
+            display: inline-block;
+
+            width: 100px;
+            height: 100px;
+            /* margin: 10px auto; */
+        }
+
+        .div-none{
+            background-color: brown;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>display : inline</h1>
+    
+    <span class="span-inline">span1</span>
+    <span>span2</span>
+    <span class="span-inline">span3</span>
+    <span>span4</span>
+    <span class="span-inline">span5</span>
+
+    <h1>display : block</h1>
+    <span class="span-block">span1</span>
+    <span class="span-block">span2</span>
+    <span class="span-block">span3</span>
+    <span class="span-block">span4</span>
+    <span class="span-block">span5</span>
+
+    <h1>display : inline-block</h1>
+    <div class="div-inline-block">div1</div>
+    <div class="div-inline-block">div2</div>
+    <div class="div-inline-block">div3</div>
+    <div class="div-inline-block">div4</div>
+    <div class="div-inline-block">div5</div>
+
+    <h1>display : none</h1>
+    <div class="div-none">div1</div>
+    <div class="div-none">div2</div>
+    <div class="div-none">div3</div>
+    <div class="div-none">div4</div>
+    <div class="div-none">div5</div>
+</body>
+</html>

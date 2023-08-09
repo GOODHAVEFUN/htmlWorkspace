@@ -1,0 +1,33 @@
+<!--잘못된 구조
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test06</title>
+    </head>
+    <body>
+        <table>
+                <td>셀1</td>
+                <td>셀2</td>
+        </table>
+    </body>
+</html> -->
+
+<!-- 잘못한 셀병합을 할 경우 예상치 못한 결과를 얻을 수 있다
+테이블 구조를 손상시키거나 내용이 정렬되지 않거나 테이블이 왜곡될 수 있다 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test06</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="2">셀1</td>
+                <td>셀2</td>
+            </tr>
+            <tr>
+                <td>셀3</td>
+            </tr>
+        </table>
+    </body>
+</html>

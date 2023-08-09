@@ -1,0 +1,39 @@
+div { 
+    background-color: beige;
+    border : 3px solid red;
+    width : 100px;
+    height: 100px;
+
+    /* 마진이나 패딩을 특정 방향만 줄 때는 속성의 이름이
+    top, right, bottom, left을 사용하면 된다 */
+    /* 방법1 
+    margin-left: 50px;
+    margin-bottom: 20px;
+    */
+
+    /* 방법2 
+            top right bottom left
+    margin: 0 0 20px 50px;
+    padding : 20px 0 0 0;
+    */
+
+    /* 숫자를 2개만 설정한다면 상하, 좌우의 여백을 설정한다 
+    margin : 20px 50px;
+    padding : 20px 0 0 0;
+    */
+
+    /* 블록요소들을 화면 중앙으로 옮길 수 있다
+    값을 조절하여 옮길수도 있지만
+    auto라는 값을 주면 알아서 좌우 여백을 동일하게 맞춰준다
+    auto는 화면크기에 따라 알아서 중앙을 유지하게 해준다 
+    margin: 20px 400px;*/
+    margin: 20px auto;
+    
+    text-align : center;
+    
+    border-radius: 50%; 
+    /* border-radius: 20px;
+    border-radius: 100px */
+    /* 값을 100px 로 크게 준다면 점점 원형에 가깝게 바뀐다
+    원으로 바꾸고 싶다면 px 단위가 아닌 %단위로 50%를 주면된다*/
+}

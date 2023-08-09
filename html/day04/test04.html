@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>transform01</title>
+    <style>
+        div{
+            border : 1px solid black;
+            background-color: brown;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px 0;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .div1{
+            transform: translate(30px, 30px);
+            /*양수, 음수에 따라 위치가 다름*/
+        }
+        .div2{
+            transform: scale(2, 0.5);
+            /* 배수로 적용됨*/
+        }
+        .div3{
+            transform: rotate(45deg);
+            /* 음수는 반대로 회전 */
+        }
+        .div4:hover {
+            transform: scale(1.5, 1.5);
+            /* hover 이벤트상태, 
+            div4클래스를 가진 요소에 마우스를 올렸을때 1.5배 확대하는것을 의미*/
+        }
+        .div5:hover{
+            transform: rotate(40deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+    </main>
+</body>
+</html>

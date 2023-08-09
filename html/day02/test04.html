@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test04</title>
+    </head>
+    <body>
+        <table border="1" width="500px" height="300px" cellspacing="0">
+            <caption>
+                caption은 표의 제목이다
+            </caption>
+            <tr>
+                <th>컬럼제목1</th> <!--컬럼의 제목처럼 사용되어 굵은 글씨와 가운데 정렬-->
+                <th>컬럼제목2</th>
+                <th>컬럼제목3</th>
+            </tr>
+            <tr>
+                <!--tr은 행을 만든다
+                내부에 td 태그를 사용해 몇개의 컬럼을 만들지 정한다-->
+                <td rowspan="2">1행 1열</td>
+                <!-- 첫번째 열에 해당하는 셀, 2개의 행을 걸쳐서 병합함-->
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <td colspan="2">2행 2열</td>
+                <!-- 두번째 행의 두번째 열에 해당하는 셀, 2개의 열을 걸쳐서 병합함-->
+            </tr>
+        </table>
+    </body>
+</html>

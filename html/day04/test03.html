@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main,section,div{
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: antiquewhite;
+        }
+        section{
+            background-color: gold;
+        }
+        div{
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 포지션을 알아보기 위한 간단한 예제-->
+    <main>
+        main
+        <section>
+            section
+            <!-- 모든 요소의 position 속성 기본값이 static이다-->
+            <div>static</div>
+            <div class="position__relative">relative</div>
+            <div class="position__absolute">absolute</div>
+            <div class="position__fixed">fixed</div>
+            <div class="position__sticky">sticky</div>
+        </section>
+    </main>
+</body>
+</html>
